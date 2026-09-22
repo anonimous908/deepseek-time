@@ -1,0 +1,35 @@
+# ============================================================================
+# .gitignore — deepseek-time
+# ----------------------------------------------------------------------------
+# No existía: el plan de archivos lo omitió. Añadido por el team-lead.
+# Sin esto se versionarían la caché de Gradle, los APKs y la ruta absoluta
+# del SDK local de cada máquina.
+# ============================================================================
+
+# --- Gradle ---
+.gradle/
+build/
+/app/build/
+
+# --- Configuración local (contiene la ruta absoluta del Android SDK) ---
+local.properties
+
+# --- Android Studio / IntelliJ ---
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Salidas de captura de build (temporales de depuración) ---
+_*.log
+*.apk
+*.aab
+
+# --- Kotlin cache & IDE assistants ---
+.kotlin/
+.workbuddy-ai/

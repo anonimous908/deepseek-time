@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  themes.xml — Tema base de la Activity a nivel de ventana.
+
+  La interfaz de usuario completa se renderiza mediante Jetpack Compose.
+  Este estilo XML inicial suprime la ActionBar nativa y define el color de fondo
+  de la ventana para evitar transiciones en blanco durante el inicio de la app.
+-->
+<resources>
+
+    <style name="Theme.DeepseekTime" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

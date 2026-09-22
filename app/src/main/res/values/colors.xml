@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  colors.xml — paleta base usada por el tema XML y por los drawables del widget.
+
+  El color por estado de tarifa es intencionadamente distintivo:
+  - PEAK     → cálido (rojo/ámbar): "cuesta el 100%".
+  - OFF-PEAK → verde/neutro: "hay descuento".
+  Esto hace el estado legible de un vistazo desde la pantalla de inicio.
+-->
+<resources>
+    <!-- Neutros de superficie -->
+    <color name="background">#FFFBFE</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface_variant">#49454F</color>
+
+    <!-- Estado de tarifa -->
+    <color name="tariff_peak">#B3261E</color>
+    <color name="tariff_peak_container">#F9DEDC</color>
+    <color name="tariff_off_peak">#2E7D32</color>
+    <color name="tariff_off_peak_container">#C8E6C9</color>
+
+    <!-- Estado degradado del catálogo -->
+    <color name="degraded">#8A6D3B</color>
+    <color name="degraded_container">#FDEBC8</color>
+
+    <!-- Marca -->
+    <color name="brand_primary">#0B3D91</color>
+</resources>

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.09.18",
+  "updatedAt": "2026-09-18T00:00:00Z",
+  "staleAfterDays": 30,
+  "currency": "USD",
+  "unit": "per_1M_tokens",
+  "models": [
+    {
+      "id": "deepseek-flash",
+      "displayName": "DeepSeek-V4.1-Flash",
+      "status": "active",
+      "peak": { "cacheHit": 0.006, "cacheMiss": 0.30, "output": 1.20 }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "displayName": "DeepSeek-V4-Pro-0813",
+      "status": "active",
+      "peak": { "cacheHit": 0.044, "cacheMiss": 1.32, "output": 3.96 }
+    }
+  ],
+  "retiredModelIds": ["deepseek-v4-flash", "deepseek-v4-flash-vision-exp"]
+}

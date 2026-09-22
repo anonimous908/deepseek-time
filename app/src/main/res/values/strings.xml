@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  strings.xml — Cadenas de texto localizadas de la aplicación y del widget.
+
+  Nota sobre el '%': los textos con un único '%' literal (p. ej. "50% DESCUENTO")
+  no se utilizan como plantillas de formato dinámico, por lo que no requieren escapado especial.
+-->
+<resources>
+
+    <!-- Identidad -->
+    <string name="app_name">DeepSeek Time</string>
+    <string name="widget_label">Tarifa DeepSeek</string>
+    <string name="widget_description">Muestra si la API de DeepSeek está en tarifa PEAK u OFF-PEAK, con cuenta regresiva y precios vigentes.</string>
+
+    <!-- Estado de tarifa -->
+    <string name="tariff_peak">TARIFA 100%</string>
+    <string name="tariff_off_peak">50% DESCUENTO</string>
+    <string name="tariff_peak_short">PEAK</string>
+    <string name="tariff_off_peak_short">OFF-PEAK</string>
+
+    <!-- Cuenta regresiva -->
+    <string name="countdown_prefix">Inicia</string>
+    <!-- Formato del Chronometer del widget: %s lo sustituye el propio Chronometer. -->
+    <string name="countdown_chronometer_format">%s</string>
+    <string name="countdown_to_offpeak">Off-Peak en</string>
+    <string name="countdown_to_peak">Peak en</string>
+    <string name="next_change">Próximo cambio</string>
+
+    <!-- Reloj / encabezado -->
+    <string name="clock_utc">Hora UTC</string>
+    <string name="clock_local">Hora local</string>
+
+    <!-- Timeline -->
+    <string name="timeline_title">Timeline del día (UTC)</string>
+
+    <!-- Precios -->
+    <string name="pricing_title">Precios vigentes</string>
+    <string name="pricing_comparison_title">Comparativa peak vs off-peak</string>
+    <string name="pricing_metric_cache_hit">Cache hit</string>
+    <string name="pricing_metric_cache_miss">Cache miss</string>
+    <string name="pricing_metric_output">Output</string>
+    <string name="pricing_saving">Ahorro off-peak: 50%</string>
+    <string name="pricing_unit">USD por 1M de tokens</string>
+
+    <!-- Catálogo -->
+    <string name="catalog_title">Catálogo</string>
+    <string name="catalog_updated">Catálogo del %1$s</string>
+    <string name="catalog_stale_warning">El catálogo puede estar desactualizado</string>
+    <string name="catalog_model_retired">Modelo retirado</string>
+    <string name="catalog_model_legacy">Modelo legacy (ID antiguo)</string>
+
+    <!-- Estado degradado (el catálogo no cargó) -->
+    <string name="degraded_title">Catálogo no disponible</string>
+    <string name="degraded_message">No se pudieron cargar los precios. El estado de tarifa y la cuenta regresiva siguen siendo correctos.</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Primer plano del icono adaptativo: un reloj (esfera blanca + agujas azules),
+  símbolo del propósito de la app (una hora determina la tarifa).
+  El dibujo vive en la "zona segura" central (radio < 36 sobre viewport 108).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Esfera del reloj -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 C68.359,28 80,39.641 80,54 C80,68.359 68.359,80 54,80 C39.641,80 28,68.359 28,54 C28,39.641 39.641,28 54,28 Z" />
+
+    <!-- Aguja de los minutos (vertical) -->
+    <path
+        android:fillColor="#0B3D91"
+        android:pathData="M52,36 h4 v20 h-4 z" />
+
+    <!-- Aguja de las horas (horizontal) -->
+    <path
+        android:fillColor="#0B3D91"
+        android:pathData="M54,52 h16 v4 h-16 z" />
+
+</vector>

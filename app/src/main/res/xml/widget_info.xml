@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  widget_info.xml — Metadatos y configuración de dimensiones del AppWidgetProvider.
+
+  updatePeriodMillis = 0 desactiva el polling periódico del sistema operativo.
+  El ciclo de actualización se gestiona mediante alarmas exactas programadas en cada
+  transición tarifaria, eliminando el consumo innecesario de batería.
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:targetCellWidth="4"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_tariff"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:description="@string/widget_description" />

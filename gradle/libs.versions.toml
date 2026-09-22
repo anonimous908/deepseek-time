@@ -1,0 +1,56 @@
+# ============================================================================
+# gradle/libs.versions.toml — catálogo de versiones
+# ----------------------------------------------------------------------------
+# Fuente única de las versiones de dependencias del módulo :app.
+# TODAS las versiones están fijadas a artefactos presentes en la caché local,
+# porque el build es `--offline` (RNF-05).
+#
+# ⚠️ Corrección respecto al plan inicial: la caché de Compose solo contiene el
+# BOM 2026.09.00, que exige compileSdk 37 + AGP 9.1.0. Por eso AGP sube a
+# 9.1.0. Kotlin se queda en 2.2.10 (par coherente con Compose Compiler 2.2.10,
+# ambos cacheados y alineados con el KGP por defecto de AGP 9).
+# ============================================================================
+
+[versions]
+# --- Plugins de build (documentativos; se declaran en el buildscript raíz) ---
+agp = "9.1.0"
+kotlin = "2.2.10"
+
+# --- Dependencias de la app ---
+composeBom = "2026.09.00"   # BOM que fija todas las versiones de Compose
+activityCompose = "1.13.0"
+coreKtx = "1.15.0"
+lifecycle = "2.8.7"
+
+# --- Dependencias de test ---
+junit = "4.13.2"
+coroutinesTest = "1.11.0"
+
+[libraries]
+# Núcleo Android
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# Ciclo de vida (ViewModel + Compose)
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
+
+# Activity (host de Compose)
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+
+# Jetpack Compose (versiones gobernadas por el BOM)
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Test
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
