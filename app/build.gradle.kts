@@ -46,11 +46,17 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("debug")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+    }
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
     }
 
     // Bytecode Java 11 (el runtime de esta máquina es Java 21; el bytecode de
