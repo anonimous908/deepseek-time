@@ -7,7 +7,7 @@ El entregable principal es un **widget de pantalla de inicio**, para no tener qu
 
 ## Estado
 
-En construcción. El esqueleto de archivos está creado y **todavía no hay releases publicados**.
+**v0.1.1 disponible**. Versión estable con dependencias de sistema actualizadas (`core-ktx:1.19.0`, `lifecycle:2.11.0`), widget de pantalla de inicio y visualizador interactivo. Podés descargar el APK directamente desde [Releases](https://github.com/anonimous908/deepseek-time/releases) o gestionarlo con Obtainium.
 
 ## Instalación y actualizaciones
 

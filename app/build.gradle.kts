@@ -37,8 +37,8 @@ android {
         applicationId = "com.protas.time_deepseek"
         minSdk = 29          // java.time disponible sin desugaring
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1v"
+        versionCode = 2
+        versionName = "0.1.1v"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
